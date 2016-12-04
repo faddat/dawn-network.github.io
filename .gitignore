@@ -1,0 +1,51 @@
+#
+# Mac OS
+#
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+#
+# Windows
+#
+ehthumbs.db
+Thumbs.db
+
+
+#
+# IDE
+#
+.idea
+/.idea
+/.idea/*.xml
+../.idea
+/*.iml
+
+
+#
+# Local installation
+#
+/bower_components/*
+/node_modules/*
+
+#
+# Logs
+#
+npm-debug.log
+
+#
+# Cache & temp
+#
+.sass-cache/*
+
+#
+# Local environment
+#
+
+
+#
+# Tests
+#
+/report
+TESTS-*.xml
