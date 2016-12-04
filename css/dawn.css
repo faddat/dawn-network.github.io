@@ -260,6 +260,9 @@ section.callout .badges .badge-link img {
     font-size: 70px;
   }
 }
+section.features .mc_embed_signup {
+  text-align: center;
+}
 section.features .section-heading {
   margin-bottom: 100px;
 }
