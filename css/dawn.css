@@ -312,7 +312,7 @@ section.cta {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/bg-cta.jpg');
+  background-image: url('../img/prairie-679014_1280.jpg');
   padding: 250px 0;
 }
 section.cta .cta-content {
@@ -327,7 +327,8 @@ section.cta .cta-content h2 {
   font-size: 50px;
 }
 section.cta .cta-content h3 {
-  color: #ecaa31;
+  color: white;
+  text-shadow: 2px 2px 2px #969696;
 }
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
