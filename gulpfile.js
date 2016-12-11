@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var pug = require('gulp-pug');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -50,6 +51,15 @@ gulp.task('minify-js', function() {
         }))
 });
 
+
+gulp.task('views', function buildHTML() {
+    return gulp.src('views/*.pug')
+        .pipe(pug({
+            // Your options in here.
+        }))
+        .pipe(gulp.dest('/'))
+});
+
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
@@ -74,7 +84,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'views']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
