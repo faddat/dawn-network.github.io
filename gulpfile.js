@@ -53,11 +53,11 @@ gulp.task('minify-js', function() {
 
 
 gulp.task('views', function buildHTML() {
-    return gulp.src('views/*.pug')
+    return gulp.src('pages/*.pug')
         .pipe(pug({
             // Your options in here.
         }))
-        .pipe(gulp.dest('/'))
+        .pipe(gulp.dest('./'))
 });
 
 // Copy vendor libraries from /node_modules into /vendor
