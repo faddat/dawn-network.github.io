@@ -107,7 +107,11 @@ p {
     border-color: fade(@gray-darker, 5%);
     .transition-all;
     .heading-font;
-
+    .navbar-header .navbar-brand {
+        img {
+            opacity: 0;
+        }
+    }
     &.affix {
         .navbar-header .navbar-brand {
             img {

@@ -118,6 +118,9 @@ p {
   font-weight: 200;
   letter-spacing: 1px;
 }
+.navbar-fade .navbar-header .navbar-brand img {
+  opacity: 0;
+}
 .navbar-fade.affix .navbar-header .navbar-brand img {
   -webkit-transition: opacity 0.25s ease-in;
   -moz-transition: opacity 0.25s ease-in;
