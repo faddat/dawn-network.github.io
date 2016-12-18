@@ -1,4 +1,4 @@
-nav#mainNav.navbar.navbar-default.navbar-fixed-top
+nav(class="mainNav navbar navbar-default navbar-fixed-top nav-"+pageType, id="mainNav")
     .container
         // Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -16,9 +16,22 @@ nav#mainNav.navbar.navbar-default.navbar-fixed-top
                   <a class="page-scroll" href="#download">Whitepaper</a>
                   </li>
                 li
-                    a.page-scroll(href='#features') Features
+                    if(pageType=="home")
+                        a.page-scroll(href='#features') Features
+                    else
+                        a.page-scroll(href='index.html#features') Features
                 li
-                    a.page-scroll(href='#contact') Contact
+                    if(pageType == "home")
+                        a.page-scroll(href='#contact') Contact
+                    else
+                        a.page-scroll(href='index.html#contact') Contact
+
+                li
+                    if(pageType == "whitepaper")
+                        a.page-scroll(href='#introduction') Whitepaper
+                    else
+                        a.page-scroll(href='whitepaper.html') Whitepaper
+
                 //
                   <li>
                   <a class="page-scroll" href="#ico">ICO</a>
