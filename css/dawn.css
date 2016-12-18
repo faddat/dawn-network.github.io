@@ -270,6 +270,10 @@ section.callout .badges .badge-link img {
     font-size: 70px;
   }
 }
+section.whitepaper img {
+  max-width: 100%;
+  text-align: center;
+}
 section.features .mc_embed_signup {
   text-align: center;
 }
