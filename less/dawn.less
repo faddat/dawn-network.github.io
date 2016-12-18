@@ -49,37 +49,29 @@ p {
 
 // Navigation
 
+.navbar-solid {
+    background-color: white;
+    .navbar-header .navbar-brand {
+        img {
+            opacity: 1;
+        }
+
+    }
+}
 .navbar-default {
     background-color: white;
-    border-color: fade(@gray-darker, 5%);
-    .transition-all;
-    .heading-font;
     .navbar-header .navbar-brand {
         .heading-font;
         color: @theme-primary;
         font-size:2.4em;
         img {
             height:23px;
-            opacity:0;
         }
         &:hover,
         &:focus {
             color: darken(@theme-primary, 20%);
         }
     }
-    &.affix {
-        .navbar-header .navbar-brand {
-            img {
-                -webkit-transition: opacity 0.25s ease-in;
-                -moz-transition: opacity 0.25s ease-in;
-                -o-transition: opacity 0.25s ease-in;
-                -ms-transition: opacity 0.25s ease-in;
-                transition: opacity 0.25s ease-in;
-                opacity:1;
-            }
-        }
-    }
-
     .navbar-header .navbar-toggle {
         font-size: 12px;
         color: @gray-darker;
@@ -110,6 +102,26 @@ p {
             }
         }
     }
+}
+.navbar-fade {
+    border-color: fade(@gray-darker, 5%);
+    .transition-all;
+    .heading-font;
+
+    &.affix {
+        .navbar-header .navbar-brand {
+            img {
+                -webkit-transition: opacity 0.25s ease-in;
+                -moz-transition: opacity 0.25s ease-in;
+                -o-transition: opacity 0.25s ease-in;
+                -ms-transition: opacity 0.25s ease-in;
+                transition: opacity 0.25s ease-in;
+                opacity:1;
+            }
+        }
+    }
+
+
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: transparent;

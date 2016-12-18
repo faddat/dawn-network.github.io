@@ -1,4 +1,4 @@
-nav(class="mainNav navbar navbar-default navbar-fixed-top nav-"+pageType, id="mainNav")
+nav(class="mainNav navbar navbar-default navbar-fixed-top navbar-"+navType, id="mainNav")
     .container
         // Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -28,7 +28,7 @@ nav(class="mainNav navbar navbar-default navbar-fixed-top nav-"+pageType, id="ma
 
                 li
                     if(pageType == "whitepaper")
-                        a.page-scroll(href='#introduction') Whitepaper
+                        a.page-scroll.active(href='#introduction') Whitepaper
                     else
                         a.page-scroll(href='whitepaper.html') Whitepaper
 
