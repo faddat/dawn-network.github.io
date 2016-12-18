@@ -6,8 +6,12 @@ nav(class="mainNav navbar navbar-default navbar-fixed-top navbar-"+navType, id="
                 span.sr-only Toggle navigation
                 |  Menu
                 i.fa.fa-bars
-            a.navbar-brand.page-scroll(href='#page-top')
-                img(src='img/dawn_logo_final.png', alt='Dawn: Distributed Autonomous Worldwide Network')
+            if(pageType=="home")
+                a.navbar-brand.page-scroll(href='#page-top')
+                    img(src='img/dawn_logo_final.png', alt='Dawn: Distributed Autonomous Worldwide Network')
+            else
+                a.navbar-brand.page-scroll(href='index.html#page-top')
+                    img(src='img/dawn_logo_final.png', alt='Dawn: Distributed Autonomous Worldwide Network')
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
