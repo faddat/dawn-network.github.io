@@ -78,6 +78,13 @@ p {
 .big {
   font-size: 2em;
 }
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+}
 .navbar-solid {
   background-color: white;
 }
@@ -197,13 +204,52 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), #ecaa31;
-  /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #ecaa31, #dc2430);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #ecaa31, #dc2430);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+  background: #ecaa31;
+  /* fallback for old browsers */
+  background: linear-gradient(208deg, #ecaa31, #dc2430);
+  background-size: 400% 400%;
+  -webkit-animation: HeaderAnimation 8s ease infinite;
+  -moz-animation: HeaderAnimation 8s ease infinite;
+  animation: HeaderAnimation 8s ease infinite;
+}
+@-webkit-keyframes HeaderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes HeaderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes HeaderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+header .texture {
+  background: url("../img/bg-pattern.png");
+  min-height: auto;
+  width: 100%;
 }
 header .header-content {
   text-align: center;
