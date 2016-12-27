@@ -58,6 +58,26 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+.fraction {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: 0.001em;
+  text-align: center;
+}
+.fraction span.fdn {
+  border-top: thin solid black;
+}
+.fraction span.bar {
+  display: none;
+}
+.fraction > span {
+  display: block;
+  padding: 0.1em;
+}
+.big {
+  font-size: 2em;
+}
 .navbar-solid {
   background-color: white;
 }
