@@ -204,7 +204,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 50%;
+  bottom: 60%;
   margin: auto;
   width: 70px;
   height: 70px;
@@ -322,9 +322,9 @@ header {
   /* fallback for old browsers */
   background: linear-gradient(208deg, #ecaa31, #dc2430);
   background-size: 400% 400%;
-  -webkit-animation: HeaderAnimation 8s ease infinite;
-  -moz-animation: HeaderAnimation 8s ease infinite;
-  animation: HeaderAnimation 8s ease infinite;
+  -webkit-animation: HeaderAnimation 15s ease infinite;
+  -moz-animation: HeaderAnimation 15s ease infinite;
+  animation: HeaderAnimation 15s ease infinite;
 }
 @-webkit-keyframes HeaderAnimation {
   0% {
