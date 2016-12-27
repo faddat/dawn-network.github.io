@@ -310,7 +310,13 @@ p {
 }
 
 // Homepage Header
-
+.scroll-wrapper {
+    position:fixed;
+    top: 100px;
+    @media(max-width: 1000px) {
+        position:relative;
+    }
+}
 header {
     position: relative;
     width: 100%;
