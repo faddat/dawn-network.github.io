@@ -192,6 +192,13 @@ p {
             }
         }
     }
+    @media (max-width:767px) {
+        .navbar-header .navbar-brand {
+            img {
+                opacity: 1;
+            }
+        }
+    }
 
 }
 
@@ -314,14 +321,17 @@ p {
     position:fixed;
     top: 100px;
     @media(max-width: 1000px) {
-        position:relative;
+        position:static;
+        top:0px;
     }
 }
+
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     overflow-y: hidden;
+    overflow:hidden;
     color: white;
     background:@theme-secondary; /* fallback for old browsers */
     background: linear-gradient(208deg, #ecaa31, #dc2430);
@@ -410,6 +420,9 @@ section {
     padding: 100px 0;
     h2 {
         font-size: 50px;
+    }
+    @media(max-width:1000px) {
+        padding:20px 0;
     }
 }
 

@@ -199,6 +199,11 @@ p {
     color: #fdcc52;
   }
 }
+@media (max-width: 767px) {
+  .navbar-fade .navbar-header .navbar-brand img {
+    opacity: 1;
+  }
+}
 .sun {
   position: absolute;
   top: 0;
@@ -318,7 +323,8 @@ p {
 }
 @media (max-width: 1000px) {
   .scroll-wrapper {
-    position: relative;
+    position: static;
+    top: 0px;
   }
 }
 header {
@@ -326,6 +332,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
+  overflow: hidden;
   color: white;
   background: #ecaa31;
   /* fallback for old browsers */
@@ -427,6 +434,11 @@ section {
 }
 section h2 {
   font-size: 50px;
+}
+@media (max-width: 1000px) {
+  section {
+    padding: 20px 0;
+  }
 }
 section.callout {
   padding: 150px 0;
